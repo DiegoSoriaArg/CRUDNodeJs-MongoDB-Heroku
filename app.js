@@ -1,5 +1,9 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 require('dotenv').config();
 
@@ -7,6 +11,7 @@ const port = process.env.PORT || 3000;
 
 //conexion a Base de datos
 const mongoose = require('mongoose');
+const { urlencoded } = require('body-parser');
 
 mongoose.connect(process.env.DB_MONGO, {useNewUrlParser: true, useUnifiedTopology: true})
 .then(() => console.log('Base de datos conectada bien'))
@@ -24,7 +29,7 @@ app.use(express.static(__dirname + "/public"));
 
 // Rutas Web
 app.use('/', require('./router/RutasWeb'));
-app.use('/mascotas',require('./router/Mascotas'));
+app.use('/mascotas', require('./router/Mascotas'));
 
 
 app.use((req, res, next) => {
