@@ -1,0 +1,19 @@
+Este es un proyecto/CRUD hecho con Node.js + Express + EJS + MongoDB + Mongoose + Heroku.
+Se habre en el siguiiente enlace https://respasodenodejs.herokuapp.com/mascotas/crear
+ó en http://localhost:3000/
+
+EJS es un lenguaje de plantillas simple que le permite generar marcado HTML con JavaScript
+
+Express es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona 
+un conjunto sólido de características para las aplicaciones web y móviles.
+
+MongoDB es una base de datos distribuida, basada en documentos y de uso general que ha sido 
+diseñada para desarrolladores de aplicaciones modernas y para la era de la nube.
+
+Mongoose es una biblioteca de modelado de datos de objetos (ODM) para MongoDB y Node. js. 
+Gestiona las relaciones entre los datos, proporciona validación de esquemas y se utiliza 
+para traducir entre objetos en código y la representación de esos objetos en MongoDB
+
+Heroku es una plataforma en la nube que permite a las empresas construir, entregar, 
+supervisar aplicaciones y alojarlas en la nube. ... Heroku a diferencia de otras plataformas 
+permite desarrollar prácticamente con cualquier lenguaje de programación: Ruby, Java, PHP, NodeJS…
